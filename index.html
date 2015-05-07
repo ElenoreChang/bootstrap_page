@@ -4,48 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>No Title</title>
 <style>
-#container {border:none; background: #CCC; width:220px ; height:400px ; float: center;}
-.month {border:1px solid black;; background: black; width: 50px;height: 50px; text-align:center;color:white; font-family: Arial; line-height:45px; margin:10px; float: left;}
-.active {border:1px solid black; background: white; width: 50px;height: 50px; color:red; font-family: Arial; line-height:45px; text-align:center; margin:10px; float: left;}
-#content {border:none; background: #CCC;}
+
 </style>
 <script>
-window.onload=function(){
-	var oCnt=document.getElementById('container');
-	var aMth=oCnt.getElementsByTagName('div');
-	var oCtt=document.getElementById('content');
-	var aAct=['元旦快乐！','是不是闰月？','三月没有节日','愚人节快乐！','劳动节假期','儿童节快乐','建军节','建党节','中秋','十一假期','双十一','圣诞！'];
-	for(var i=0; i<aMth.length-1; i++){
-		aMth[i].index=i;
-		aMth[i].onmouseover=function(){
-			//alert(typeof(this.index));
-			for(var x=0; x<aMth.length-1; x++){
-				aMth[x].className='month';
-			}
-			this.className='active';
-			oCtt.innerHTML='<h3>'+(parseInt(this.index)+1)+'月活动</h3><p>'+aAct[this.index]+'</p>';
-			//alert(activity[this.index]);
-		}
-	}
-}
+
 </script>
 </head>
 
 <body>
-<div id='container'>
-	<div class='month'>Jan.</div>
-	<div class='month'>Feb.</div>
-	<div class='month'>Mar.</div><br><br><br><br>
-	<div class='month'>Apr.</div>
-	<div class='month'>May.</div>
-	<div class='month'>Jun.</div><br><br><br><br>
-	<div class='month'>Jul.</div>
-	<div class='month'>Aug.</div>
-	<div class='month'>Sep.</div><br><br><br><br>
-	<div class='month'>Oct.</div>
-	<div class='month'>Nov.</div>
-	<div class='month'>Dec.</div><br><br><br><br>
-	<div id='content'></div>
-</div>
-</div></body>
+<h1>Elenore Zhang</h1>
+<h2>LEAN MANUFACTURE ENGINEER</h2>
+</body>
 </html>
