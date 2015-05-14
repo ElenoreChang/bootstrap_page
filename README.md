@@ -1,2 +1,5 @@
 # My Personal Website
-A simple stastic page for my online profile.
+
+----
+
+As a starter, I'm trying to build a simple stastic page for my online profile.
