@@ -6,7 +6,7 @@ window.onload= function(){
 	else{// code for IE6, IE5
   		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   	}
-  	xmlhttp.open("GET","JSON.txt",true);
+  	xmlhttp.open("GET","http://zhangxiaohan.me/JSON.txt",true);
   	xmlhttp.send();
 	xmlhttp.onreadystatechange=function(){
   		if(xmlhttp.readyState==4){	
