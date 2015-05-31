@@ -165,3 +165,14 @@ body {
     width: 700px;
   }
 }
+/* Handle the icons */
+.mastfoot .inner li {
+  display: inline; margin: 10px;
+}
+.mastfoot .inner img {
+  width: 24px; height: 24px;
+}
+/* Replace user agent stylesheet */
+ul {
+  -webkit-padding-start: 0px;
+}

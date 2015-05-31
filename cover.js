@@ -41,6 +41,19 @@ function getElementsByClass(searchClass,node,tag) {
 }
 //根据返回数据改变外观
 var updateview=function(dataJson){
-	var Ahead=getElementsByClass("masthead-brand");
-	Ahead[0].innerHTML=dataJson.user.name;
+	var Ohead=getElementsByClass("masthead-brand")[0];
+	Ohead.innerHTML=dataJson.user.name;
+	//设置底部图标、链接及列表id
+	var Ofoot=getElementsByClass("mastfoot")[0];
+	var Alink=Ofoot.getElementsByTagName("a");
+	for(i==0;i<Alink.length;i++){
+		var index=i;
+		Alink[i].parentNode.id=dataJson.user.social_media[index].name;
+		Alink[i].href=dataJson.user.social_media[index].href;
+	}
+	var Aicon=Ofoot.getElementsByTagName("img");
+	for(i==0;i<Aicon.length;i++){
+		var index=i;
+		Aicon[i].src=dataJson.user.social_media[index].icon_url;
+	}
 }

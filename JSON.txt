@@ -1,19 +1,19 @@
 {
     "user": {
-        "name": "ZhangXiaohan",
+        "name": "Zhang Xiaohan",
         "birthday": 1991,
         "is_girl": true,
         "slogan": "吃吃吃",
         "social_media": [
             {
                 "name": "Weibo",
-                "icon_url": "https://www.baidu.com/img/bdlogo.png",
-                "href": ""
+                "icon_url": "weibo.png",
+                "href": "http://weibo.com/undergroundsky"
             },
             {
                 "name": "Douban",
-                "icon_url": "https://www.baidu.com/img/bdlogo.png",
-                "href": ""
+                "icon_url": "douban.png",
+                "href": "http://www.douban.com/people/undergroundsky/"
             }
         ]
     }
