@@ -22,10 +22,12 @@ window.onload= function(){
 //getElementsByClass()方法
 function getElementsByClass(searchClass,node,tag) {
 	var classElements = new Array();
-	if ( node == null )
+	if ( node == null ){
 		node = document;
-	if ( tag == null )
+	}
+	if ( tag == null ){
 		tag = '*';
+	}
 	var els = node.getElementsByTagName(tag);
 	var elsLen = els.length;
 	var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
@@ -37,8 +39,8 @@ function getElementsByClass(searchClass,node,tag) {
 	}
 	return classElements;
 }
-//根据返回数据
+//根据返回数据改变外观
 var updateview=function(dataJson){
 	var Ohead=getElementsByClass("masthead-brand");
-	Ohead.innerHTML=dataJson.user.name；
+	Ohead.innerHTML=dataJson.user.name;
 }
