@@ -41,6 +41,6 @@ function getElementsByClass(searchClass,node,tag) {
 }
 //根据返回数据改变外观
 var updateview=function(dataJson){
-	var Ohead=getElementsByClass("masthead-brand");
-	Ohead.innerHTML=dataJson.user.name;
+	var Ahead=getElementsByClass("masthead-brand");
+	Ahead[0].innerHTML=dataJson.user.name;
 }
