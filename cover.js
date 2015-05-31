@@ -12,7 +12,7 @@ window.onload= function(){
   		if(xmlhttp.readyState==4){	
   			var jsonResp=xmlhttp.responseText;
     		jsonResp=eval("("+jsonResp+")");
-    		alert(jsonResp); 
+    		alert(jsonResp.user.name+"的爱好是："+jsonResp.user.slogan); 
     	}
   	}  
 
