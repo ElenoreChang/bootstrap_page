@@ -1,0 +1,20 @@
+{
+    "user": {
+        "name": "ZhangXiaohan",
+        "birthday": 1991,
+        "is_girl": true,
+        "slogan": "吃吃吃",
+        "social_media": [
+            {
+                "name": "Weibo",
+                "icon_url": "https://www.baidu.com/img/bdlogo.png",
+                "href": ""
+            },
+            {
+                "name": "Douban",
+                "icon_url": "https://www.baidu.com/img/bdlogo.png",
+                "href": ""
+            }
+        ]
+    }
+}
