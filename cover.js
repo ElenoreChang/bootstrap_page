@@ -46,12 +46,14 @@ var updateview=function(dataJson){
 	//设置底部图标、链接及列表id
 	var Ofoot=getElementsByClass("mastfoot")[0];
 	var Alink=Ofoot.getElementsByTagName("a");
-	for(i==0;i<Alink.length;i++){
-		Alink[i].parentNode.id=dataJson.user.social_media[i].name;
-		Alink[i].href=dataJson.user.social_media[index].href;
-	}
 	var Aicon=Ofoot.getElementsByTagName("img");
-	for(i==0;i<Aicon.length;i++){
-		Aicon[i].src=dataJson.user.social_media[i].icon_url;
+	for(var i=0;i<dataJson.user.social_media.length;i++){
+		var index=i;
+		Alink[index].parentNode.id=dataJson.user.social_media[i].name;
+		Alink[index].href=dataJson.user.social_media[i].href;
+	}
+	for(var i=0;i<dataJson.user.social_media.length;i++){
+		var index=i;
+		Aicon[index].src=dataJson.user.social_media[i].icon_url;
 	}
 }
